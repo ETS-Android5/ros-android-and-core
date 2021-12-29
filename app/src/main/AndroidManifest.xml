@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.robotsdna.robot">
+    package="com.schneewittchen.rosandroid">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -19,7 +19,7 @@
         tools:ignore="GoogleAppIndexingWarning"
         tools:replace="android:icon">
         <activity
-            android:name="com.robotsdna.robot.ui.activity.MainActivity"
+            android:name="com.schneewittchen.rosandroid.ui.activity.MainActivity"
             android:windowSoftInputMode="adjustResize"
             android:screenOrientation="unspecified">
 
