@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 30
     buildToolsVersion "29.0.3"
 
     defaultConfig {
         applicationId "com.robotsdna.robot"
         minSdkVersion 21
-        targetSdkVersion 31
+        targetSdkVersion 30
         versionCode 1
         versionName '1.0'
     }
@@ -32,20 +32,17 @@ android {
 dependencies {
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.4.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
 
     implementation "androidx.navigation:navigation-fragment:2.3.5"
     implementation "androidx.navigation:navigation-ui:2.3.5"
 
-    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'com.google.android.material:material:1.3.0'
     implementation "androidx.viewpager2:viewpager2:1.0.0"
 
     implementation 'androidx.legacy:legacy-support-core-utils:1.0.0'
-
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
 
     // ROS
     implementation "org.ros.rosjava_core:rosjava:0.3.6"
@@ -64,7 +61,7 @@ dependencies {
     annotationProcessor "androidx.room:room-compiler:2.3.0"
 
     // Parsing
-    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.google.code.gson:gson:2.8.9'
 
     // Open Street Maps (e.g. for GPS)
     implementation 'org.osmdroid:osmdroid-android:6.1.6'
@@ -74,4 +71,5 @@ dependencies {
 
     // Color picker
     implementation "com.github.skydoves:colorpickerview:2.2.3"
+    implementation 'com.google.guava:guava:27.0.1-android'
 }
